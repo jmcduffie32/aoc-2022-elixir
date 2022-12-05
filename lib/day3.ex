@@ -13,7 +13,7 @@ defmodule Day3 do
 
   defp sum_chars(ch_list) do
     ch_list
-    |> map(&(char_to_priority(at(&1, 0))))
+    |> map(&char_to_priority(at(&1, 0)))
     |> sum()
   end
 
